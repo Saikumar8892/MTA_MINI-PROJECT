@@ -1,16 +1,17 @@
 <div>
-    <h2>New Account Creation</h2>
+    <h2>SignUp page</h2>
 
     <form [formGroup]="loginRef" (ngSubmit)="signUp()">
-        <label>EmailId :</label>
+        <label>Username :</label>
         <input type="email" formControlName="emailid"/>
         <br><br/>
         <label>Password :</label>
         <input typr="password" formControlName="password"/>
         <br><br/>
         <label>TypeOfUser :</label>
-        <input type="radio" name="typeOfUser" value="admin" formControlName="typeOfUser"/>admin
-        <input type="radio" name="typeOfUser" value="user" formControlName="typeOfUser"/>user<br/> <br><br/>
+        <input type="checkbox" name="typeOfUser" value="admin" formControlName="typeOfUser"/>admin
+        <input type="checkbox" name="typeOfUser" value="user" formControlName="typeOfUser"/>user<br/> 
+        <br><br/>
         <input type="submit" value="signUp"/>
         <input type="reset" value="reset">  
     </form>
